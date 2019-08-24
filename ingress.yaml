@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: guestbook-ingress-stage
+  namespace: staging
+spec:
+  rules:
+  - host: staging-guestbook.mstakx.io
+    http:
+      paths:
+      - backend:
+          serviceName: frontend
+          servicePort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: guestbook-ingress-prod
+  namespace: production
+spec:
+  rules:
+  - host: guestbook.mstakx.io
+    http:
+      paths:
+      - backend:
+          serviceName: frontend
+          servicePort: 80
