@@ -29,8 +29,8 @@ Once the gcloud sdk is installed run **sh wrapper.sh <project_name>** to install
 
 ## Testing Autoscalar.
 
-Run **sh loadtest.sh start <namespace>** to start the load test on any namespace.  
-kubectl get hpa -n <namespace> shows the current utilization and replicas.
+Run **sh loadtest.sh start <name_space>** to start the load test on any namespace.  
+kubectl get hpa -n <name_space> shows the current utilization and replicas.
 
 Run **sh loadtest.sh stop** to stop the current running load.
 
