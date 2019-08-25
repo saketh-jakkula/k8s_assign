@@ -27,7 +27,7 @@ From a localmachine or outside GCP we need to install gcloud sdk. Below example 
 
 Once the gcloud sdk is installed run **sh wrapper.sh <project_name>** to install the application.
 
-## Testing Autoscalar.
+## Testing Pod Autoscalar.
 
 Run **sh loadtest.sh start <name_space>** to start the load test on any namespace.  
 kubectl get hpa -n <name_space> shows the current utilization and replicas.
