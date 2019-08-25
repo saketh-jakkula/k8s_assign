@@ -3,8 +3,8 @@
 Need to have a GCP account and create a project.  
 Install gloud sdk if not running on a google cloud shell.  
 
-Clone this repository.
-**Wrapper.sh** scripts runs all the steps of installing Demo application on both the Namespaces and configuring Ingress-nginx.
+Clone this repository.  
+**Wrapper.sh scripts runs all the steps of installing Demo application on both the Namespaces and configuring Ingress-nginx**.
 
 ## Installing the application.
 Script can be run from cloud shell or from any local shell.    
